@@ -13,7 +13,7 @@
 <v>Output</v>
 </TreeKeys>
 <TreeStates>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="Tests\xCombo\Source Files">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="Tests\xCombo\xCombo.cydwr">
 <ExpandedNodeIds>
 <v>Tests</v>
 <v>Tests\Linienfolger\TopDesign</v>
@@ -88,6 +88,8 @@
 <v>Tests\xCombo\Generated_Source\PSoC5</v>
 </ExpandedNodeIds>
 <VisibleNodeIds>
+<v>Tests</v>
+<v>Tests\Linienfolger</v>
 <v>Tests\PWM-Geschwindigkeit</v>
 <v>Tests\PWM-Geschwindigkeit\TopDesign</v>
 <v>Tests\PWM-Geschwindigkeit\PWM-Geschwindigkeit.cydwr</v>
@@ -124,8 +126,6 @@
 <v>Tests\xCombo\Generated_Source\PSoC5\clock_100Hz</v>
 <v>Tests\xCombo\Generated_Source\PSoC5\clock_100kHz</v>
 <v>Tests\xCombo\Generated_Source\PSoC5\clock_1kHz</v>
-<v>Tests\xCombo\Generated_Source\PSoC5\cy_boot</v>
-<v>Tests\xCombo\Generated_Source\PSoC5\Em_EEPROM_Dynamic</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 <CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
@@ -330,10 +330,14 @@
 <v>Tests\xCombo\CortexM3\ARM_GCC_541\Debug\Listing Files\PWM_left_for.lst</v>
 <v>Tests\xCombo\CortexM3\ARM_GCC_541\Debug\Listing Files\PWM_left_for_LED.lst</v>
 <v>Tests\xCombo\CortexM3\ARM_GCC_541\Debug\Listing Files\PWM_PM.lst</v>
+<v>Tests\xCombo\CortexM3\ARM_GCC_541\Debug\Listing Files\PWM_right_back.lst</v>
+<v>Tests\xCombo\CortexM3\ARM_GCC_541\Debug\Listing Files\PWM_right_for.lst</v>
 <v>Tests\xCombo\CortexM3\ARM_GCC_541\Debug\Listing Files\Sample_Hold.lst</v>
 <v>Tests\xCombo\CortexM3\ARM_GCC_541\Debug\Listing Files\Sample_Hold_PM.lst</v>
 <v>Tests\xCombo\CortexM3\ARM_GCC_541\Debug\Listing Files\setPWM_left_back.lst</v>
 <v>Tests\xCombo\CortexM3\ARM_GCC_541\Debug\Listing Files\setPWM_left_for.lst</v>
+<v>Tests\xCombo\CortexM3\ARM_GCC_541\Debug\Listing Files\setPWM_right_back.lst</v>
+<v>Tests\xCombo\CortexM3\ARM_GCC_541\Debug\Listing Files\setPWM_right_for.lst</v>
 <v>Tests\xCombo\CortexM3\ARM_GCC_541\Debug\Listing Files\Timer_1s.lst</v>
 <v>Tests\xCombo\CortexM3\ARM_GCC_541\Debug\Listing Files\Timer_1s_PM.lst</v>
 <v>Tests\xCombo\CortexM3\ARM_GCC_541\Debug\Listing Files\UART.lst</v>
@@ -450,6 +454,8 @@
 <v>Tests\xCombo\cy_isr_v1_70\cy_isr_v1_70.pdf</v>
 <v>Tests\xCombo\cy_pins_v2_20</v>
 <v>Tests\xCombo\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+<v>Tests\xCombo\not_v1_0</v>
+<v>Tests\xCombo\not_v1_0\not_v1_0.pdf</v>
 <v>Tests\xCombo\PWM_v3_30.pdf</v>
 <v>Tests\xCombo\Sample_Hold_v1_40.pdf</v>
 <v>Tests\xCombo\Timer_v2_80.pdf</v>
@@ -508,15 +514,11 @@
 </CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997>
 <Unloaded />
 <OpenDocs>
-<name v=".\xCombo.cydsn\TopDesign\TopDesign.cysch" />
 <name v=".\xCombo.cydsn\main.c" />
-<name v=".\xCombo.cydsn\linienfolger.c" />
-<name v=".\xCombo.cydsn\linienfolger.h" />
-<name v=".\PWM-Geschwindigkeit.cydsn\TopDesign\TopDesign.cysch" />
-<name v=".\xCombo.cydsn\xCombo.cydwr" />
-<name v=".\PWM-Geschwindigkeit.cydsn\main.c" />
-<name v=".\xCombo.cydsn\geschwindigkeit.h" />
+<name v=".\xCombo.cydsn\TopDesign\TopDesign.cysch" />
 <name v=".\xCombo.cydsn\geschwindigkeit.c" />
+<name v=".\xCombo.cydsn\linienfolger.c" />
+<name v=".\xCombo.cydsn\xCombo.cydwr" />
 </OpenDocs>
 <OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
 
@@ -524,7 +526,7 @@
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="950, 535" SelectedTabbedMdiWindow="b7e9bd83-6435-4dcc-bfcc-b5c85b8084f1"><DocumentWindow Key="C:\Users\simon\OneDrive - HTL Anichstrasse\Schule\Diplomarbeit\Tests\xCombo.cydsn\TopDesign\TopDesign.cysch" Guid="cd26c640-cfc6-4105-97b5-56b03f0a8463" /><DocumentWindow Key="C:\Users\simon\OneDrive - HTL Anichstrasse\Schule\Diplomarbeit\Tests\xCombo.cydsn\main.c" Guid="0780e59f-ff4c-4039-b596-309e5e2a3c51" /><DocumentWindow Key="C:\Users\simon\OneDrive - HTL Anichstrasse\Schule\Diplomarbeit\Tests\xCombo.cydsn\linienfolger.c" Guid="a4b78199-e154-4b67-a810-8ff8440ea5ed" /><DocumentWindow Key="C:\Users\simon\OneDrive - HTL Anichstrasse\Schule\Diplomarbeit\Tests\xCombo.cydsn\linienfolger.h" Guid="2ef5e7b1-c59c-4155-8e3f-68c73eb7e734" /><DocumentWindow Key="C:\Users\simon\OneDrive - HTL Anichstrasse\Schule\Diplomarbeit\Tests\PWM-Geschwindigkeit.cydsn\TopDesign\TopDesign.cysch" Guid="f67d1c1a-c1f8-4daa-b628-7a4b1c06972a" /><DocumentWindow Key="C:\Users\simon\OneDrive - HTL Anichstrasse\Schule\Diplomarbeit\Tests\xCombo.cydsn\xCombo.cydwr" Guid="4e619f71-fdbf-42fb-99b3-407f3c3cea2b" /><DocumentWindow Key="C:\Users\simon\OneDrive - HTL Anichstrasse\Schule\Diplomarbeit\Tests\PWM-Geschwindigkeit.cydsn\main.c" Guid="505387e2-e368-407c-9c09-80a2e7f63a41" /><DocumentWindow Key="C:\Users\simon\OneDrive - HTL Anichstrasse\Schule\Diplomarbeit\Tests\xCombo.cydsn\geschwindigkeit.h" Guid="8c521b11-f2d2-4929-8596-2ee8c87955a8" /><DocumentWindow Key="C:\Users\simon\OneDrive - HTL Anichstrasse\Schule\Diplomarbeit\Tests\xCombo.cydsn\geschwindigkeit.c" Guid="b7e9bd83-6435-4dcc-bfcc-b5c85b8084f1" /><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="943320d1-e31f-41c6-84c3-8055440f910d" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="950, 535" SelectedTabbedMdiWindow="c13d7a0d-057f-4d66-a703-4f56a86e444d"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="943320d1-e31f-41c6-84c3-8055440f910d" /><DocumentWindow Key="C:\Users\simon\OneDrive - HTL Anichstrasse\Schule\Diplomarbeit\PSoC\Tests\xCombo.cydsn\main.c" Guid="c13d7a0d-057f-4d66-a703-4f56a86e444d" /><DocumentWindow Key="C:\Users\simon\OneDrive - HTL Anichstrasse\Schule\Diplomarbeit\PSoC\Tests\xCombo.cydsn\TopDesign\TopDesign.cysch" Guid="43ab5bfa-1b20-4f93-870f-1742c1f9df90" /><DocumentWindow Key="C:\Users\simon\OneDrive - HTL Anichstrasse\Schule\Diplomarbeit\PSoC\Tests\xCombo.cydsn\geschwindigkeit.c" Guid="6381dac4-2098-47c0-876f-f0739cab1e44" /><DocumentWindow Key="C:\Users\simon\OneDrive - HTL Anichstrasse\Schule\Diplomarbeit\PSoC\Tests\xCombo.cydsn\linienfolger.c" Guid="f9eacf47-0890-41c6-a42c-ed219a902433" /><DocumentWindow Key="C:\Users\simon\OneDrive - HTL Anichstrasse\Schule\Diplomarbeit\PSoC\Tests\xCombo.cydsn\xCombo.cydwr" Guid="211d7c62-f7b3-47d9-ab3e-3ee788d3b544" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>
