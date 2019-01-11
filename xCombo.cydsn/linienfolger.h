@@ -1,2 +1,2 @@
 int *getIREcho(void);
-void setIRDirection(void);
+int setIRDirection(void);

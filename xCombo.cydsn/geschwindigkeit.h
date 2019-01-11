@@ -1,1 +1,1 @@
-void setSpeed(int);
+void setSpeed(int,int);

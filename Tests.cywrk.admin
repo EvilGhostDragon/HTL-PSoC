@@ -321,6 +321,9 @@
 <v>Tests\xCombo\CortexM3\ARM_GCC_541\Debug\Listing Files\inIR_R.lst</v>
 <v>Tests\xCombo\CortexM3\ARM_GCC_541\Debug\Listing Files\isr_1s.lst</v>
 <v>Tests\xCombo\CortexM3\ARM_GCC_541\Debug\Listing Files\isr_ADC.lst</v>
+<v>Tests\xCombo\CortexM3\ARM_GCC_541\Debug\Listing Files\isr_irled_L.lst</v>
+<v>Tests\xCombo\CortexM3\ARM_GCC_541\Debug\Listing Files\isr_irled_M.lst</v>
+<v>Tests\xCombo\CortexM3\ARM_GCC_541\Debug\Listing Files\isr_irled_R.lst</v>
 <v>Tests\xCombo\CortexM3\ARM_GCC_541\Debug\Listing Files\linienfolger.lst</v>
 <v>Tests\xCombo\CortexM3\ARM_GCC_541\Debug\Listing Files\main.lst</v>
 <v>Tests\xCombo\CortexM3\ARM_GCC_541\Debug\Listing Files\Pin_Poti.lst</v>

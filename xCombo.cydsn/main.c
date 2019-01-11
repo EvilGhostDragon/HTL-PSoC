@@ -6,6 +6,7 @@
 
 //GLOBAL_VAR_START-----------------------------------------
 uint16 uiPoti = 0;
+int inDreh = 0; //0...keine Drehung; -1... links Drehung; 1... rechts Drehung
 int i = 0;
 //GLOBAL_VAR_STOP------------------------------------------
 
@@ -24,12 +25,15 @@ CY_ISR(isr_ADC){
 CY_ISR_PROTO(isr_1s);
 CY_ISR(isr_1s){
     
-    char cOut[20];
-    sprintf(cOut,"%d \n\r",uiPoti*5);
-    UART_PutString(cOut);
-    setSpeed(uiPoti);
+    setSpeed(uiPoti,inDreh);
     ADC_Start();
     //UART_PutString("1s \n\r");
+}
+CY_ISR_PROTO(isr_irled);
+CY_ISR(isr_irled){
+    inDreh = setIRDirection();
+    setSpeed(uiPoti,inDreh);
+    UART_PutString("IR triggerd \n\r");
 }
 //ISR_END--------------------------------------------------
 
@@ -45,6 +49,9 @@ void init(){
     
     isr_ADC_StartEx(isr_ADC);
     isr_1s_StartEx(isr_1s);
+    isr_irled_L_StartEx(isr_irled);
+    isr_irled_R_StartEx(isr_irled);
+    isr_irled_M_StartEx(isr_irled);
     UART_PutString("ISR init \r\n");
     
     Timer_1s_Start();
@@ -59,7 +66,7 @@ void init(){
     UART_PutString("INIT Finished \r\n");
     UART_PutString("Program START\r\n\n\n");
     
-    setSpeed(1000);
+    setSpeed(1000,0);
     
     CyGlobalIntEnable; 
 }
@@ -71,7 +78,8 @@ int main(void)
 
     for(;;)
     {
-        setIRDirection();
+        
+        
         
     }
 }
